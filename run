@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Can you feel the irony? Using docker to build this plugin! 
+if [[ $1 == "-f" ]]; then
+    docker build -t cockpit-docker .
+else
+    echo "==> Using cached build"
+fi
+
+# Del running container 
+docker rm -f cockpit-docker
+
+# Remove output 
+rm -rf ./dist ; mkdir ./dist
+
+docker run -it \
+-v $PWD:/app \
+--name cockpit-docker \
+cockpit-docker
+
+cockpit-bridge --packages

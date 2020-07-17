@@ -1,0 +1,13 @@
+{
+    "version": "125",
+    "requires": {
+	    "cockpit": "122"
+    },
+    "menu": {
+        "index": {
+            "label": "Docker (Fork)",
+            "order": 50
+        }
+    },
+    "content-security-policy": "img-src 'self' data:"
+}

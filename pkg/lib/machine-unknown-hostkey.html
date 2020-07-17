@@ -1,0 +1,24 @@
+<div class="modal-header">
+    <h4 class="modal-title" translate="yes">Unknown Host Key</h4>
+</div>
+<div id="add-unknown-host" class="modal-body">
+    {{#key}}
+        <p translate="yes">The authenticity of host {{#strong}}{{host}}{{/strong}} can't be established. Are you sure you want to continue connecting?</p>
+        <div>
+        <table class="form-table-ct">
+            <tr>
+                <td translate="yes">Fingerprint</td>
+                <td><pre class="machine-key">{{key}} </pre></td>
+            </tr>
+        </table>
+        </div>
+    {{/key}}
+</div>
+
+<div class="modal-footer">
+    <button class="pf-c-button pf-m-secondary" data-dismiss="modal" translate="yes">Close</button>
+
+    {{#key}}
+        <button class="pf-c-button pf-m-primary" translate="yes">Connect</button>
+    {{/key}}
+</div>
