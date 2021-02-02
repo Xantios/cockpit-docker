@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## Deprecated, please use the install script.
+## The (now old) method is to convaluted
+
 # Can you feel the irony? Using docker to build this plugin! 
 if [[ $1 == "-f" ]]; then
     docker build -t cockpit-docker .

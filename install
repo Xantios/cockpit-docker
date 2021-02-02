@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Check for dependencies
+command -v docker >/dev/null 2>&1 || { echo >&2 "I require docker but it's not installed.  Aborting."; exit 1; }
+command -v cockpit-bridge >/dev/null 2>&1 || { echo >&2 "I require cockpit but it's not installed.  Aborting."; exit 1; }
+
+# Build 
+docker build -t cockpit-docker .
+
+# Remove container if exists
+docker rm -f cockpit-docker
+
+# Remove old build 
+rm -rf ./dist ; mkdir ./dist
+
+# Prep build folder
+mkdir -p $PWD/dist/docker
+
+# Build
+docker run -it \
+-v $PWD:/app \
+--name cockpit-docker \
+cockpit-docker
+
+# Link as user module
+mkdir -p ~/.local/share/cockpit
+ln -s $PWD/dist/docker $HOME/.local/share/cockpit/docker
+
+echo "===> List of packages, if all went fine this list should container docker"
+cockpit-bridge --packages
