@@ -120,6 +120,10 @@ var plugins = [
     new copy(info.files),
     new miniCssExtractPlugin("[name].css"),
     new CleanUpStatsPlugin(),
+    new webpack.ProvidePlugin({
+       $: "jquery",
+       jQuery: "jquery"
+    }),
 ];
 
 var output = {
