@@ -9,7 +9,7 @@ First off you need to install cockpit according to [Cockpit docs](https://cockpi
 ### 2) Get the plugin
 You can clone this repository by running 
 
-`git clone https://github.com/Xantios/cockpit-docker` 
+`git clone https://github.com/mrevjd/cockpit-docker` 
 
 ### 3) Install
 run the `./install` script
@@ -34,7 +34,7 @@ Same as user module but instead of linking to `$HOME/.local/share/cockpit/docker
 
 ## License 
 Cockpit is licensed under the GNU Lesser general public license. 
-So im stuck with that. https://github.com/cockpit-project/cockpit/blob/master/COPYING
+So I'm stuck with that. https://github.com/cockpit-project/cockpit/blob/master/COPYING
 
 ## Why the fork?
 
@@ -42,4 +42,4 @@ The Cockpit team stopped caring in version 215, declaring they going 'in favor' 
 
 the cockpit-podman plugin is currently in development and is far from feature-complete.
 
-that doesnt stop RedHat from killing it ! but its OSS ! So lets fork !
+that doesnt stop RedHat from killing it ! but its OSS ! So let's fork !
