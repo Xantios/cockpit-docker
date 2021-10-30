@@ -22,7 +22,10 @@ var info = {
         "docker/console.html",
         "docker/index.html",
         "docker/images/drive-harddisk-symbolic.svg",
-        "docker/manifest.json"
+        "docker/manifest.json",
+        "docker/css",
+        "docker/js",
+        "docker/fonts"
     ]
     
 };
