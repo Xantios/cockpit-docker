@@ -1,3 +1,7 @@
+html:not(.index-page) body {
+   overflow-y: auto;
+}
+
 a {
     cursor: pointer;
 }

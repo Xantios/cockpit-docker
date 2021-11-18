@@ -5,7 +5,7 @@
     },
     "menu": {
         "index": {
-            "label": "Docker (Fork)",
+            "label": "Docker",
             "order": 50
         }
     },
