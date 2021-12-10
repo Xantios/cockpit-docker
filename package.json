@@ -10,6 +10,7 @@
     "@redhat/redhat-font": "git+https://github.com/RedHatOfficial/RedHatFont.git#2.2.0",
     "bootstrap": "3.4.1",
     "bootstrap-datepicker": "1.9.0",
+    "bootstrap-select": "1.13.12",
     "c3": "0.4.24",
     "d3": "3.5.17",
     "deep-equal": "1.1.1",
@@ -22,7 +23,6 @@
     "patternfly": "3.59.4",
     "patternfly-bootstrap-combobox": "1.1.7",
     "patternfly-react": "2.39.13",
-    "bootstrap-select": "1.13.12",
     "prop-types": "15.7.2",
     "qunit": "2.9.3",
     "qunit-tap": "1.5.1",
@@ -33,6 +33,7 @@
     "redux": "4.0.5",
     "redux-thunk": "2.3.0",
     "remarkable": "2.0.0",
+    "remove-files-webpack-plugin": "^1.4.5",
     "throttle-debounce": "2.1.0",
     "uuid": "3.4.0",
     "xterm": "4.4.0"
