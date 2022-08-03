@@ -26,6 +26,7 @@ cockpit-docker
 rm -rf $HOME/.local/share/cockpit/docker
 
 # Link as user module
+rm $PWD/dist/docker/*test*
 mkdir -p ~/.local/share/cockpit
 ln -snf $PWD/dist/docker $HOME/.local/share/cockpit/docker
 
