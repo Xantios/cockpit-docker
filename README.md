@@ -54,14 +54,18 @@ wget https://launchpad.net/ubuntu/+source/cockpit/215-1~ubuntu19.10.1/+build/188
 sudo dpkg -i cockpit-docker_215-1~ubuntu19.10.1_all.deb
 ```
 
+
 ## License 
 Cockpit is licensed under the GNU Lesser general public license. 
 So I'm stuck with that. https://github.com/cockpit-project/cockpit/blob/master/COPYING
 
 ## Why the fork?
 
-The Cockpit team stopped caring in version 215, declaring they going 'in favor' of podman. a container system nobody uses instead of the defacto standard. 
-
+The Cockpit team stopped caring in version 215, declaring they going 'in favor' of podman, a container system nobody uses instead of the defacto standard. 
 the cockpit-podman plugin is currently in development and is far from feature-complete.
-
 that doesnt stop RedHat from killing it ! but its OSS ! So let's fork !
+
+
+## Alternative
+I have found Portainer https://www.portainer.io/ to be a very good solution for a web based management.
+
